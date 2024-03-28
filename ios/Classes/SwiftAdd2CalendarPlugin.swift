@@ -118,6 +118,8 @@ public class SwiftAdd2CalendarPlugin: NSObject, FlutterPlugin {
             // Auth denied or restricted
             completion?(false)
         }
+        @unknown default:
+            completion?(false)
     }
     
     // Present edit event calendar modal
